@@ -43,11 +43,7 @@ pub fn test_fmt_display() {
     let big_range = MinMax(-300, 300);
     let small_range = MinMax(-3, 3);
 
-    println!(
-        "This big range is {big} and this small is {small}.",
-        big = big_range,
-        small = small_range
-    );
+    println!("This big range is {big} and this small is {small}.", big = big_range, small = small_range);
 
     let point = Point2D { x: 3.3, y: 7.2 };
 
@@ -55,10 +51,7 @@ pub fn test_fmt_display() {
     println!("Display:{}", point);
     println!("Debug:{:?}", point);
 
-    let complex = Complex {
-        real: 3.5,
-        imag: 9.2,
-    };
+    let complex = Complex { real: 3.5, imag: 9.2 };
 
     println!("Compare complex:");
     println!("Display:{}", complex);

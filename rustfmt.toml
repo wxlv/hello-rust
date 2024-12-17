@@ -1,0 +1,3 @@
+max_width = 180
+struct_lit_width = 100
+overflow_delimited_expr = true
