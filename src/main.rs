@@ -7,7 +7,9 @@
 // mod learn_enum;
 // mod learn_use;
 // mod learn_enum_c_style;
-mod learn_enum_linked_list;
+// mod learn_enum_linked_list;
+// mod learn_coercion;
+mod learn_while;
 
 fn main() {
     println!("Hello, Rust!");
@@ -20,5 +22,8 @@ fn main() {
     // learn_enum::enum_test();
     // learn_use::use_enum();
     // learn_enum_c_style::enum_c_style();
-    learn_enum_linked_list::enum_linked_list();
+    // learn_enum_linked_list::enum_linked_list();
+    // learn_coercion::coercion_test();
+    // learn_while::for_test();
+    learn_while::for_iter_test();
 }
