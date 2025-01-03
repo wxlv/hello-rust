@@ -69,4 +69,19 @@ pub fn test_methods() {
 
     let pair = Pair(Box::new(144), Box::new(2));
     pair.destroy();
+
+    let vec1 = vec![1, 2, 3];
+    let vec2 = vec![4, 5, 6];
+
+    //
+    println!("2 to vec1 : {}", vec1.iter().any(|&x| x == 2));
+
+    println!("2 to vec2 : {}", vec2.into_iter().any(|x| x == 2));
+
+    let array1 = [1, 2, 3];
+    let array2 = [4, 5, 6];
+    println!("2 to vec1 : {}", array1.iter().any(|&x| x == 2));
+    println!("2 to vec2 : {}", array2.into_iter().any(|x| x == 2));
+
+    println!("array1 is {:?}, array2 is {:?}", array1, array2);
 }

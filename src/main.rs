@@ -9,7 +9,8 @@
 // mod learn_enum_c_style;
 // mod learn_enum_linked_list;
 // mod learn_coercion;
-mod learn_method;
+mod learn_hof;
+// mod learn_method;
 // mod learn_while;
 
 fn main() {
@@ -27,5 +28,6 @@ fn main() {
     // learn_coercion::coercion_test();
     // learn_while::for_test();
     // learn_while::for_iter_test();
-    learn_method::test_methods()
+    // learn_method::test_methods()
+    learn_hof::test_hof()
 }
