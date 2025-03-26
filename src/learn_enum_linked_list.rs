@@ -41,13 +41,15 @@ impl List {
                 // `format!` 和 `print!` 类似，但返回一个堆分配的字符串而不是打印结果到控制台
                 format!("{}, {}", head, tail.stringify())
             }
-            Nil => {
-                "Nil".to_string()
-            }
+            Nil => "Nil".to_string(),
         }
     }
 }
 
+/// Demonstrates the usage of an enum-based linked list.
+///
+/// This function creates a new linked list, adds some elements to it, and then
+/// prints the length and string representation of the final list.
 pub fn enum_linked_list() {
     // 创建一个空链表
     let mut list = List::new();

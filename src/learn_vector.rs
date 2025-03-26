@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 pub fn sort_vector() {
     let mut vec_1 = vec![1, 5, 10, 7, 2, 3, 4, 6, 8, 9];
     vec_1.sort();
@@ -57,4 +59,38 @@ pub fn sort_struct_vector() {
     );
 
     println!("{:?}", people);
+}
+
+pub fn vector_iter() {
+    let collected_iterator: Vec<i32> = (0..10).collect();
+    println!("Collected (0..10) into: {:?}", collected_iterator);
+
+    // `vec!` 宏允许在创建向量的同时初始化值
+    let mut xs = vec![1i32, 2, 3];
+    println!("Initial vector: {:?}", xs);
+
+    xs.push(4);
+    println!("Vector after push: {:?}", xs);
+
+    xs.pop();   
+    println!("Vector after pop: {:?}", xs);
+
+    // 迭代一个vector很容易
+    for x in xs.iter() {
+        println!("> {}", x);
+    }
+
+    // 可以在迭代的同时，使用独立的变量i记录迭代次数
+    for (i, x) in xs.iter().enumerate() {
+        println!("> {}: {}", i, x);
+    }
+
+    // 多亏了`iter_mut`，可以得到一个可变迭代器
+    for x in xs.iter_mut() {
+        *x *= 3;
+    }
+    println!("Vector after mutate: {:?}", xs);  
+    
+    
+    
 }

@@ -1,33 +1,12 @@
-// mod fmt_display;
-// mod list_for_display;
-// mod fmt_of_args;
-// mod learn_construct;
-// mod array_slice;
-// mod learn_structure;
-// mod learn_enum;
-// mod learn_use;
-// mod learn_enum_c_style;
-// mod learn_enum_linked_list;
-// mod learn_coercion;
-mod learn_hof;
-// mod learn_method;
-// mod learn_while;
-
+mod conversion;
 fn main() {
-    println!("Hello, Rust!");
-    // fmt_display::test_fmt_display();
-    // list_for_display::list_display();
-    // fmt_of_args::write_args_fmt();
-    // learn_construct::construct_test();
-    // array_slice::array_slice();
-    // learn_structure::structure_test();
-    // learn_enum::enum_test();
-    // learn_use::use_enum();
-    // learn_enum_c_style::enum_c_style();
-    // learn_enum_linked_list::enum_linked_list();
-    // learn_coercion::coercion_test();
-    // learn_while::for_test();
-    // learn_while::for_iter_test();
-    // learn_method::test_methods()
-    learn_hof::test_hof()
+    let _rs = conversion::base::num_to_base36(103807307673765);
+    println!("{}", _rs);
+
+    let _rs1 = conversion::base::base36_to_num("2QFz1zaG4");
+    println!("{}", _rs1);
+
+    let digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
+
+    println!("Hello, world! {}", digits.len());
 }
